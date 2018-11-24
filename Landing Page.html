@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Cobra ITech Services Corporation</title>
+      <link rel="icon" type="png" href="icon.png" >
+      <link rel="stylesheet" type="text/css" href="Align.css">
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="loginstyle.css" type="text/css"/>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+<body>
+            <header>
+                  <nav>
+                        <div class="menu-icon">
+                              <i class="fa fa-bars fa-2x"></i>
+                        </div>
+                        <div class="logo">
+                        <a href="Landing Page.html"><img src="logo.png" width="250px"></a>
+                        </div>
+                  
+                        <div class="menu">
+                              <ul>
+                                    <li><a href="index.html">About</a></li>
+                                    <li><a href="index.html">Services</a></li>
+                                    <li><a href="index.html">Developers</a></li>
+                                    <li><input type="Search" id= "search" name= "search" placeholder= "Search..."></li>
+                                    <li onclick="document.getElementById('id01').style.display='block'" style="height: 25PX;"><a class="active" href="#">Log In</a></li>
+                                    <li><a class="active1" href="index.html">Sign Up</a></li>
+                              </ul>
+      
+                        </div>  
+                  </nav>
+                  <div class="hero">
+                    <h1>IT Services for all.</h1>
+                      <h3><br>Cobra Itech Services Corporation got its name from the 2 leading senior consultants and</br> <br>principals of the company namely Craig Covey and Lemuel Braña. This represents the</br><br>joining of forces of American and Filipino consultants...</br></h3>
+                       </div>
+
+            </header> 
+            <section>
+                <div class="img-clock">
+                  <img src="images/clock.png" alt="clock-bg">
+                </div>
+                <div class="clock-text">
+                  <h1>Available 24/7.</h1>
+                  <p>Serving you at any moment all the time.</p>
+                </div>
+                <div class="profile-text">
+                  <h1>Create your Profile.</h1>
+                </div>
+               <div class="img-profile">
+                  <img src="images/profile.png" alt="icon-bg">
+                </div>
+                <div class="img-quest">
+              <img src="images/qmark.png" alt="quest-bg">
+                </div>
+                <div class="quest-text">
+                  <h1>Got questions?</h1>
+                <p>Give us your feedback.</p>
+                </div>
+            </section>
+             
+      <footer>
+        <div class="logo">
+                        <img src="images/logo_white.png" width="300px"></a>
+                        </div>
+            <div id="container">
+              <div id="left">
+              <ul>
+                  <li><a href="About.html">About us</a><a1 href="#">Developers</a1></li>
+                  <li><a href="#">Contact us</a><a2 href="#">Partners</a2></li>
+                  <li><a href="#">Privacy</a><a3 href="#">Advertisers</a3></li>
+                  <li><a href="#">Blog</a><a4 href="#">Help</a4></li>
+                  </ul>
+              </div>
+              <div id="right">
+                <ul> <li><a href="#" target="blank"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="#" target="blank"><i class="fa fa-twitter"></i></a></li>
+                  <li><a href="#" target="blank"><i class="fa fa-google-plus"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            
+      </footer>
+
+            
+
+
+      <script type="text/javascript">
+
+      // Menu-toggle button
+
+      $(document).ready(function() {
+            $(".menu-icon").on("click", function() {
+                  $("nav ul").toggleClass("showing");
+            });
+      });
+
+      // Scrolling Effect
+
+      $(window).on("scroll", function() {
+            if($(window).scrollTop()) {
+                  $('nav').addClass('black');
+            }
+
+            else {
+                  $('nav').removeClass('black');
+            }
+      })
+
+
+      </script>
+      <div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="logo.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit"><a href="Home.html">Login</a></button>
+      <input type="checkbox" checked="checked"> Remember me
+    </div>
+
+    <div class="container" style="background-color:gold">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>
+
+
